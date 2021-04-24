@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Header */
+.topbar {
+    width: 65%;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pname {
+    color: rgb(111, 109, 240);
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.menu {
+    margin-top: 10px;
+    display: flex;
+    color: #ccc;
+    width: 25%;
+    justify-content: space-between;
+}
+
+
+
+.main-header {
+    background-image: url(./img/bg_top.jpg);
+    width: 100%;
+    align-items: center;
+}
+
+h1 {
+    padding-top: 170px;
+    padding-bottom: 100px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.container-b {
+    padding-bottom: 150px;
+    align-items: center;
+}
+
+.button-h {
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: palevioletred;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.text-button-h {
+   padding-top: 13px;
+}
+/* Header */
+
+
+.up-main h2{
+    margin-top: 70px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.container-m {
+    display: flex;
+    width: 65%;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    justify-content: space-between;
+}
+
+.block {
+    align-items: center;
+    text-align: center;
+    color: #ccc;
+}
+
+img {
+    width: 40px;
+}
+
+.last {
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+.down-main {
+    background-color: rgb(253, 251, 251);
+    padding-bottom: 60px;
+}
+
+.down-main h2 {
+    padding-top: 60px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.house {
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.house:nth-last-child(2){
+    margin-bottom: 30px;
+}
+
+.house-img {
+    width: 280px;
+    height: 240px;
+}
+
+.about-h {
+    margin-left: 30px;
+}
+
+h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.house p {
+    margin-bottom: 15px;
+    color: #ccc;
+    font-size: 14px;
+}
+ 
+/* Main */
+
+
+/* Footer */
+
+footer {
+    background-color: rgb(48, 48, 58);
+    color: #ccc;
+    text-align: center;
+    align-items: center;
+}
+
+.up-f {
+    text-align: center;
+
+    font-size: 25px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.middle-f {
+    display: flex;
+    margin: 0 auto;
+    width: 15%;
+    justify-content: space-between;
+}
+
+.bottom-f {
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+/* Footer */
