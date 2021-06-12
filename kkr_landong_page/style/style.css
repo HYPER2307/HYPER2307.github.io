@@ -1,0 +1,520 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Exo', sans-serif;
+}
+
+body p {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+/* Header */
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-size: cover;
+    background-image: url(/img/footer-bg.jpg);
+    background-position: top;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 auto;
+    padding-top: 250px;
+    width: 40%;
+    padding-bottom: 50px;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.video-botton img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 50px;
+}
+
+.try-button {
+    
+    line-height: 50px;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    width: 180px;
+    height: 50px;
+    border-radius: 7px;
+    background-color: rgb(255, 109, 109);
+}
+
+.try-button p {
+    color: white;
+}
+
+.card-datails {
+    color: rgb(139, 139, 142);
+    padding-top: 25px;
+    padding-bottom: 310px;
+}
+/* Header */
+
+/* section2 */
+
+.section2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.info {
+    width: 50%;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: left;
+    margin-bottom: 200px;
+    margin-top: 200px;
+    z-index: -10;
+}
+
+.visual {
+    width: 50%;
+}
+
+.design {
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(255, 109, 109);
+}
+
+.section2 h2{
+    font-weight: 500;
+    font-size: 50px;
+
+}
+
+span {
+    padding: 0;
+    margin: 0;
+    color: rgb(255, 109, 109);
+}
+
+.in{
+    color: rgb(139, 139, 142);
+    padding-top: 35px;
+    width: 80%;
+}
+
+.visual {
+    background-color: rgb(236, 236, 236);
+    bottom: 0;
+    position: relative;
+}
+
+#square {
+    position: absolute;
+    border: 600px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-right: 800px solid rgb(255, 109, 109);
+    border-left: 0px solid transparent;
+    bottom: 0;
+
+}
+/* section2 */
+
+
+
+/* section3 */
+
+.section3 {
+    margin-top: -40px;
+    background-image: url(/img/bg-sector3.png);
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    text-align: center;
+    z-index: -2;
+}
+
+.section3 img {
+    width: 80px;
+}
+
+.features {
+    padding-top: 200px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(255, 109, 109);
+}
+
+.section3 h2 {
+    font-weight: 500;
+    font-size: 50px;
+    padding-bottom: 100px;
+}
+
+.info-t {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inf h4 {
+    font-size: 20px;
+}
+
+.inf p {
+    margin: 0 auto;
+    width: 75%;
+    color: rgb(139, 139, 142);
+}
+/* section3 */
+
+/* description */
+
+.description {
+    margin-top: -20px;
+    display: flex;
+    z-index: -1;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.description img{
+    width: 650px;
+    height: 350px;
+    margin-left: 60px;
+}
+
+.container-a {
+    position: absolute;
+    display: flex;
+    
+    
+}
+
+.container-de {
+    padding-left: 20px;
+    width: 40%;
+}
+
+.container-de .design {
+    color: rgb(255, 109, 109);
+}
+
+.description h2 {
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.description p {
+    line-height: 30px;
+    color: rgb(139, 139, 142);
+}
+
+.bg {
+    
+    border: 600px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-left: 800px solid rgb(255, 109, 109);
+    bottom: 0;
+}
+/* description */
+
+/* clients */
+
+.clients {
+    background-image: url(/img/bg-clients.jpg);
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.container-card {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    padding-bottom: 120px;
+}
+
+.face {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(78, 78, 94);
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.clients h5 {
+    margin: 0;
+    padding: 0; 
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.work {
+    color: rgb(255, 109, 109);
+    margin-bottom: 25px;
+}
+
+.card-description {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(139, 139, 142);
+}
+
+.prievies {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+/* clients */
+
+/* browser */
+
+.browser {
+    align-items: center;
+    text-align: center;
+    background-color: rgb(246, 245, 243);
+    margin-bottom: -5px;
+}
+
+.browser h2 {
+    font-weight: 500;
+    font-size: 50px;
+    padding-bottom: 40px;
+}
+
+.features-browser {
+    margin: 0;
+    padding-top: 120px;
+    padding-bottom: 5px;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(255, 109, 109);
+}
+
+.in-browser {
+    color: rgb(139, 139, 142);
+    width: 44%;
+    margin: 0 auto;
+    padding-bottom: 150px;
+}
+
+/* browser */
+
+/* try-now */
+
+.try-now {
+    background-color: rgb(52, 57, 105);
+    align-items: center;
+    text-align: center;
+}
+
+.try-now h2 {
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    
+}
+
+.container-try {
+    display: flex;
+    width: 26%;
+    margin: 0 0 0 auto;
+    padding-bottom: 15px;
+}
+
+.trial {
+    color: white;
+}
+
+.register {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.register-b {
+    width: 300px;
+    height: 50px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    line-height: 50px;
+    color: white;
+    border-radius: 3px;
+    background-color: rgb(70, 76, 119);
+    text-align: left;
+    padding-left: 20px;
+}
+
+.try-now-butt {
+    width: 300px;
+    height: 50px;
+    box-sizing: border-box;
+    line-height: 50px;
+    color: white;
+    border-radius: 3px;
+    background-color: rgb(255, 109, 109);
+}
+
+.about {
+    color: rgb(139, 139, 142);
+    padding-bottom: 70px;
+}
+
+.link {
+    color: rgb(139, 139, 142);
+}
+/* try-now */
+
+/* footer */
+
+
+footer {
+    display: flex;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 69%;
+    position: absolute;
+    z-index: -1;
+    align-items: center;
+    margin-left: 90px;
+
+}
+
+footer .bg {
+    border: 300px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-left: 400px solid rgb(255, 109, 109);
+    top: 0;
+    transform: rotate(180deg);
+    margin-left: auto;
+    position: relative;
+    z-index: -2;
+}
+
+
+.start-ex {
+    width: 22%;
+}
+
+.arrow {
+    display: inline;
+}
+
+.start {
+    display: flex;
+}
+
+.start p {
+    position: absolute;
+}
+
+.sent-email {
+    display: flex;
+}
+
+.email-l {
+    width: 250px;
+    height: 50px;
+    box-sizing: border-box;
+    line-height: 50px;
+    color: rgb(139, 139, 142);
+    border-radius: 3px;
+    background-color: rgb(246, 246, 246);
+    padding-left: 20px;
+}
+
+.sent-butt {
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    line-height: 50px;
+    color: white;
+    border-radius: 3px;
+    background-color: rgb(255, 109, 109);
+    text-align: center;
+    line-height: 46px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+    padding: 10px;
+}
+
+.social {
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.sent-butt img {
+    text-align: center;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 10px;
+    width: 17px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-dribbble {
+    background: #ea4c89;
+    color: white;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+footer p {
+    color: rgb(139, 139, 142);
+}
+
+/* footer */
