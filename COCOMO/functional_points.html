@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <title>Метод функціональних точок</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <h3>Dificulty levels</h3>
+            <hr>
+            <div class="second">
+                <span class="first">Value</span>
+                <span class="common">Low</span>
+                <span class="common">Nominal</span>
+                <span class="common">High</span>
+                <hr>
+                <div class="firstgroup">
+                    <label class="forF" for="firstinput">Internal Logical File</label>
+                    <input class="inputF" value="0" name="firstinput" type="number">
+                    <label class="check" for="">7</label>
+                    <input class="checkB" name="1" value="7" type="radio">
+                    <label class="checkS" for="thirdtinput">10</label>
+                    <input class="checkB" name="1" value="10" type="radio" checked>
+                    <label class="checkS" for="fourthtinput">15</label>
+                    <input class="checkB" name="1" value="15" type="radio">
+                </div>
+                <div class="secondgroup">
+                    <label class="forF" for="">External Interface File</label>
+                    <input class="inputF" value="0" name="secondinput" type="number">
+                    <label class="check" for="7">5</label>
+                    <input class="checkB" name="2" value="5" type="radio">
+                    <label class="checkS" for="8">7</label>
+                    <input class="checkB" name="2" value="7" type="radio" checked>
+                    <label class="checkST" for="9">10</label>
+                    <input class="checkB" name="2" value="10" type="radio">
+                </div>
+                <div class="thirdgroup">
+                    <label class="forF" for="10">External Input</label>
+                    <input class="inputF" value="0" name="thirdinput" type="number">
+                    <label class="check" for="11">3</label>
+                    <input class="checkB" name="3" value="3" type="radio">
+                    <label class="checkS" for="12">4</label>
+                    <input class="checkB" name="3" value="4" type="radio" checked>
+                    <label class="checkSTH" for="13">6</label>
+                    <input class="checkB" name="3" value="6" type="radio">
+                </div>
+                <div class="fourthgroup">
+                    <label class="forF" for="14">External Output</label>
+                    <input class="inputF" value="0" name="fourthinput" type="number">
+                    <label class="check" for="15">4</label>
+                    <input class="checkB" name="4" value="4" type="radio">
+                    <label class="checkS" for="16">5</label>
+                    <input class="checkB" name="4" value="5" type="radio" checked>
+                    <label class="checkSTH" for="17">7</label>
+                    <input class="checkB" name="4" value="7" type="radio">
+                </div>
+                <div class="fifthgroup">
+                    <label class="forF" for="18">External Inquiry</label>
+                    <input class="inputF" value="0" name="fifthinput" type="number">
+                    <label class="check" for="19">3</label>
+                    <input class="checkB" name="5" value="3" type="radio">
+                    <label class="checkS" for="20">4</label>
+                    <input class="checkB" name="5" value="4" type="radio" checked>
+                    <label class="checkSTH" for="21">6</label>
+                    <input class="checkB" name="5" value="6" type="radio">
+                </div>
+    
+            </div>
+            <hr>
+            <h3>Environmental Factors</h3>
+            <div class="third">
+                <label class="forF" for="select1">Data Communications</label>
+                <select id="1">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <label class="forF" for="select2">Distributed Functions</label>
+                <select id="2">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <br>
+                <label class="forF" for="select1">Performance</label>
+                <select id="3">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <label class="forF" for="select2">Heavily Used Configuration</label>
+                <select id="4">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <br>
+                <label class="forF" for="select1">Transaction Rate</label>
+                <select id="5">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <label class="forF" for="select2">Online Data Entry</label>
+                <select id="6">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <br>
+                <label class="forF" for="select1">End User Efficiency</label>
+                <select id="7">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <label class="forF" for="select2">Complex Processing</label>
+                <select id="8">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <br>
+                <label class="forF" for="select1">Online Update</label>
+                <select id="9">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <label class="forF" for="select2">Reusability</label>
+                <select id="10">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <br>
+                <label class="forF" for="select1">Installation Ease</label>
+                <select id="11">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <label class="forF" for="select2">Operational Ease</label>
+                <select id="12">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <br>
+                <label class="forF" for="select1">Multiple Sites</label>
+                <select id="13">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <label class="forF" for="select2">Facilitate Change</label>
+                <select id="14">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <br>
+            </div>
+            <hr>
+            <div>
+                <label>Виберіть мову програмування:</label>
+                <select class="form-select form-select-lg mb-3" name="" id="main">
+                    <option value="1">Пакетні файли DOS</option>
+                    <option value="2">Basic</option>
+                    <option value="3">PL/1</option>
+                    <option value="4">C#</option>
+                    <option value="5">Розширений LISP</option>
+                    <option value="6">Java</option>
+                    <option value="7">JavaScript</option>
+                    <option value="8">C++</option>
+                    <option value="9">Visual Basic</option>
+                    <option value="10">Мови баз даних</option>
+                    <option value="11">Access</option>
+                    <option value="12">VBScript</option>
+                    <option value="13">Мови підтримки прийняття</option>
+                    <option value="14">FoxPro 2.5</option>
+                    <option value="15">DELPHI</option>
+                    <option value="16">Стандартні об'єктно-орієнтовані</option>
+                    <option value="17">VB.Net</option>
+                    <option value="18">Стандартні мови 4-го покоління</option>
+                    <option value="19">HTML 3.0</option>
+                    <option value="20">SQL</option>
+                    <option value="21">SQL Forms</option>
+                    <option value="22">Excel</option>
+    
+                </select>
+            </div>
+            <button class="btn btn-outline-success">Calculate</button>
+            <div class="result">
+                <label>Adjusting complexity factor:</label>
+                <input class="outputF" type="text"><br>
+                <label>Adjusted functional points:</label>
+                <input class="outputS" type="text"><br>
+                <label>LOC string conversion:</label>
+                <input class="outputT" type="text">
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/functional.js"></script>
+</body>
+
+</html>

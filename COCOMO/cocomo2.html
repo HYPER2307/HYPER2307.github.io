@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>COCOMO 2</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <h1 class="title">COCOMO2</h1>
+            <div class="input">
+                Стадія оцінки:
+                <select id="typeSelect">
+                    <option>Early Design</option>
+                    <option>Post Architecture</option>
+                </select>
+                Кількість рядків коду тис.
+                <input type="number" value="" min="1" placeholder="0" id="kInput">
+            </div>
+            <div class="param">
+                <div class="early_scaleSelect">
+                    <div class="scaleSelect">
+                        <h2>Чинники маштабу:</h2>
+                        <div class="select-block">
+                            <div class="descr">Працездатність, наявність досвіду(PREC)</div>
+                            <select class="sel" id="PREC">
+                                <option>Very Low</option>
+                                <option>Low</option>
+                                <option>Nominal</option>
+                                <option>High</option>
+                                <option>Very High</option>
+                                <option>Extra High</option>
+                            </select>
+                        </div>
+                        <div class="select-block">
+                            <div class="descr">Гнучкість процесу(FLEX)</div>
+                            <select class="sel" id="FLEX">
+                                <option>Very Low</option>
+                                <option>Low</option>
+                                <option>Nominal</option>
+                                <option>High</option>
+                                <option>Very High</option>
+                                <option>Extra High</option>
+                            </select>
+                        </div>
+                        <div class="select-block">
+                            <div class="descr">Архітектура і дозвіл ризиків(RESL)</div>
+                            <select class="sel" id="RESL">
+                                <option>Very Low</option>
+                                <option>Low</option>
+                                <option>Nominal</option>
+                                <option>High</option>
+                                <option>Very High</option>
+                                <option>Extra High</option>
+                            </select>
+                        </div>
+                        <div class="select-block">
+                            <div class="descr">Спрацьованість(TEAM)</div>
+                            <select class="sel" id="TEAM">
+                                <option>Very Low</option>
+                                <option>Low</option>
+                                <option>Nominal</option>
+                                <option>High</option>
+                                <option>Very High</option>
+                                <option>Extra High</option>
+                            </select>
+                        </div>
+                        <div class="select-block">
+                            <div class="descr">Зрілість процесів(PMAT)</div>
+                            <select class="sel" id="PMAT">
+                                <option>Very Low</option>
+                                <option>Low</option>
+                                <option>Nominal</option>
+                                <option>High</option>
+                                <option>Very High</option>
+                                <option>Extra High</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="earlySelect">
+                        <h2>Множн. трудомісткості для Early Design:</h2>
+                        <div class="select-block">
+                            <div class="descr">Класифікація персоналу(PERS)</div>
+                            <select class="sel" id="PERS">
+                                <option>Extra Low</option>
+                                <option>Very Low</option>
+                                <option>Low</option>
+                                <option>Nominal</option>
+                                <option>High</option>
+                                <option>Very High</option>
+                                <option>Extra High</option>
+                            </select>
+                        </div>
+                        <div class="select-block">
+                            <div class="descr">Досвід персоналу(PREX)</div>
+                            <select class="sel" id="PREX">
+                                <option>Extra Low</option>
+                                <option>Very Low</option>
+                                <option>Low</option>
+                                <option>Nominal</option>
+                                <option>High</option>
+                                <option>Very High</option>
+                                <option>Extra High</option>
+                            </select>
+                        </div>
+                        <div class="select-block">
+                            <div class="descr">Склад. і надійн. продукту(RCPX)</div>
+                            <select class="sel" id="RCPX">
+                                <option>Extra Low</option>
+                                <option>Very Low</option>
+                                <option>Low</option>
+                                <option>Nominal</option>
+                                <option>High</option>
+                                <option>Very High</option>
+                                <option>Extra High</option>
+                            </select>
+                        </div>
+                        <div class="select-block">
+                            <div class="descr">Розроб. для повторного використ.(RUSE)</div>
+                            <select class="sel" id="RUSE">
+                                <option>Extra Low</option>
+                                <option>Very Low</option>
+                                <option>Low</option>
+                                <option>Nominal</option>
+                                <option>High</option>
+                                <option>Very High</option>
+                                <option>Extra High</option>
+                            </select>
+                        </div>
+                        <div class="select-block">
+                            <div class="descr">Складність платформи розробки(PDIF)</div>
+                            <select class="sel" id="PDIF">
+                                <option>Extra Low</option>
+                                <option>Very Low</option>
+                                <option>Low</option>
+                                <option>Nominal</option>
+                                <option>High</option>
+                                <option>Very High</option>
+                                <option>Extra High</option>
+                            </select>
+                        </div>
+                        <div class="select-block">
+                            <div class="descr">Обладнання(FCIL)</div>
+                            <select class="sel" id="FCIL">
+                                <option>Extra Low</option>
+                                <option>Very Low</option>
+                                <option>Low</option>
+                                <option>Nominal</option>
+                                <option>High</option>
+                                <option>Very High</option>
+                                <option>Extra High</option>
+                            </select>
+                        </div>
+                        <div class="select-block">
+                            <div class="descr">Необхідний графік(SCED)</div>
+                            <select class="sel" id="SCED">
+                                <option>Extra Low</option>
+                                <option>Very Low</option>
+                                <option>Low</option>
+                                <option>Nominal</option>
+                                <option>High</option>
+                                <option>Very High</option>
+                                <option>Extra High</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="result-co2">
+                        <button id="res">Результат</button>
+                        <div class="resourse">Трудомісткість = <div id="result-co2">0</div></div>
+                        
+                    </div>
+                </div>
+                <div class="postSelect">
+                    <h2>Множн. трудомісткості для Post Architecture</h2>
+                    <div class="select-block">
+                        <div class="descr">Можливості аналітики(ACAP)</div>
+                        <select class="sel" id="ACAP">
+                            <option>Very Low</option>
+                            <option>Low</option>
+                            <option>Nominal</option>
+                            <option>High</option>
+                            <option>Very High</option>
+                            <option>Extra High</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <div class="descr">Досвід розробки додатків(AEXP)</div>
+                        <select class="sel" id="AEXP">
+                            <option>Very Low</option>
+                            <option>Low</option>
+                            <option>Nominal</option>
+                            <option>High</option>
+                            <option>Very High</option>
+                            <option>Extra High</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <div class="descr">Можливості програміста(PCAP)</div>
+                        <select class="sel" id="PCAP">
+                            <option>Very Low</option>
+                            <option>Low</option>
+                            <option>Nominal</option>
+                            <option>High</option>
+                            <option>Very High</option>
+                            <option>Extra High</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <div class="descr">Тривалість роботи персоналу(PCON)</div>
+                        <select class="sel" id="PCON">
+                            <option>Very Low</option>
+                            <option>Low</option>
+                            <option>Nominal</option>
+                            <option>High</option>
+                            <option>Very High</option>
+                            <option>Extra High</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <div class="descr">Досвід роботи з платформою(PEXP)</div>
+                        <select class="sel" id="PEXP">
+                            <option>Very Low</option>
+                            <option>Low</option>
+                            <option>Nominal</option>
+                            <option>High</option>
+                            <option>Very High</option>
+                            <option>Extra High</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <div class="descr">Досвід використання мови прогр.(LTEX)</div>
+                        <select class="sel" id="LTEX">
+                            <option>Very Low</option>
+                            <option>Low</option>
+                            <option>Nominal</option>
+                            <option>High</option>
+                            <option>Very High</option>
+                            <option>Extra High</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <div class="descr">Надійність програми(RELY)</div>
+                        <select class="sel" id="RELY">
+                            <option>Very Low</option>
+                            <option>Low</option>
+                            <option>Nominal</option>
+                            <option>High</option>
+                            <option>Very High</option>
+                            <option>Extra High</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <div class="descr">Розмір бази даних(DATA)</div>
+                        <select class="sel" id="DATA">
+                            <option>Very Low</option>
+                            <option>Low</option>
+                            <option>Nominal</option>
+                            <option>High</option>
+                            <option>Very High</option>
+                            <option>Extra High</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <div class="descr">Складність програми(CPLX)</div>
+                        <select class="sel" id="CPLX">
+                            <option>Very Low</option>
+                            <option>Low</option>
+                            <option>Nominal</option>
+                            <option>High</option>
+                            <option>Very High</option>
+                            <option>Extra High</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <div class="descr">Можливість багаторазового використ.(RUSE)</div>
+                        <select class="sel" id="RUSE2">
+                            <option>Very Low</option>
+                            <option>Low</option>
+                            <option>Nominal</option>
+                            <option>High</option>
+                            <option>Very High</option>
+                            <option>Extra High</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <div class="descr">Відповідн. документація потребам(DOCU)</div>
+                        <select class="sel" id="DOCU">
+                            <option>Very Low</option>
+                            <option>Low</option>
+                            <option>Nominal</option>
+                            <option>High</option>
+                            <option>Very High</option>
+                            <option>Extra High</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <div class="descr">Обмеження часу виконання(TIME)</div>
+                        <select class="sel" id="TIME">
+                            <option>Very Low</option>
+                            <option>Low</option>
+                            <option>Nominal</option>
+                            <option>High</option>
+                            <option>Very High</option>
+                            <option>Extra High</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <div class="descr">Обмеження пам'яті(STOR)</div>
+                        <select class="sel" id="STOR">
+                            <option>Very Low</option>
+                            <option>Low</option>
+                            <option>Nominal</option>
+                            <option>High</option>
+                            <option>Very High</option>
+                            <option>Extra High</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <div class="descr">Змінність платформи(PVOL)</div>
+                        <select class="sel" id="PVOL">
+                            <option>Very Low</option>
+                            <option>Low</option>
+                            <option>Nominal</option>
+                            <option>High</option>
+                            <option>Very High</option>
+                            <option>Extra High</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <div class="descr">Викор. інструментів прог. засобів(TOOL)</div>
+                        <select class="sel" id="TOOL">
+                            <option>Very Low</option>
+                            <option>Low</option>
+                            <option>Nominal</option>
+                            <option>High</option>
+                            <option>Very High</option>
+                            <option>Extra High</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <div class="descr">Віддалена розробка(SITE)</div>
+                        <select class="sel" id="SITE">
+                            <option>Very Low</option>
+                            <option>Low</option>
+                            <option>Nominal</option>
+                            <option>High</option>
+                            <option>Very High</option>
+                            <option>Extra High</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <div class="descr">Необхідність виконання графіку робіт(SCED)</div>
+                        <select class="sel" id="SCED2">
+                            <option>Very Low</option>
+                            <option>Low</option>
+                            <option>Nominal</option>
+                            <option>High</option>
+                            <option>Very High</option>
+                            <option>Extra High</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/cocomo2.js"></script>
+</body>
+
+</html>
